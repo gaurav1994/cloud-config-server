@@ -6,3 +6,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+microservices:
+  contact-service:
+    endpoints:
+      endpoint: http://contact-service/contact/user/
+  address-service:
+    endpoints:
+      endpoint: http://address-service/address/user/
